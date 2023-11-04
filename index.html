@@ -10,6 +10,21 @@
   font-style: normal;
 }
   .wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+
+   .bouncy {
+        animation: bouncy 5s infinite linear;
+        position: relative;
+    }
+
+    @keyframes bouncy {
+        0% { top: 0em }
+        40% { top: 0em }
+        43% { top: -0.9em }
+        46% { top: 0em }
+        48% { top: -0.4em }
+        50% { top: 0em }
+        100% { top: 0em; }
+    }
   </style>
   <title>Landing page template - Webflow HTML website template</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -28,6 +43,7 @@
   <link href="https://assets-global.website-files.com/img/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
+  font-family: Simpsonfont-p07r, sans-serif;
   <div class="hero">
     <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-easing="ease" data-easing2="ease" role="banner" class="nav w-nav">
       <div class="nav-inner">
@@ -35,9 +51,12 @@
           <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#" class="brand w-nav-brand"><br></a>
         </div>
         <div class="nav-menu-wrap">
-          <nav role="navigation" class="nav-menu-2 w-nav-menu">
-            <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#about" class="nav-link w-nav-link">Twitter</a><a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#features" class="nav-link w-nav-link">Telegram</a><a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#how-to-use" class="nav-link w-nav-link">Chart</a><a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#download" class="nav-link w-nav-link w--current">Buy</a>
-          </nav>
+         <nav role="navigation" class="nav-menu-2 w-nav-menu">
+    <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#about" class="nav-link w-nav-link button1 bouncy">Twitter</a>
+    <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#features" class="nav-link w-nav-link button1 bouncy" style="animation-delay: 0.07s">Telegram</a>
+    <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#how-to-use" class="nav-link w-nav-link button1 bouncy" style="animation-delay: 0.14s">Chart</a>
+    <a href="https://gyubhhjbkjkhbls-fantastic-site.webflow.io/#download" class="nav-link w-nav-link button1 bouncy" style="animation-delay: 0.21s">Buy</a>
+</nav>
           <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
             <div class="menu-icon w-icon-nav-menu"></div>
           </div>
