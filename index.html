@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  	@font-face {
-  font-family: 'YourFontName';
-  src: url('xd_files/Simpsonfont-p07r.ttf') format('ttf');
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .feature-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .feature-image {
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    @media only screen and (max-width: 767px) {
+      .feature-wrap.reverse {
+        flex-direction: column-reverse;
+      }
+    }
+@font-face {
+  font-family: 'Simpsonfont';
+  src: url('./xd_files/Simpsonfont-p07r.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-  .wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+
+body {
+  font-family: 'Simpsonfont', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
    .bouncy {
         animation: bouncy 5s infinite linear;
