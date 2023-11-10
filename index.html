@@ -35,7 +35,30 @@
       font-weight: normal;
       font-style: normal;
     }
+ .news-ticker {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #FFF;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
+    .news-content {
+      animation: ticker-scroll 15s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes ticker-scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
     .hero {
       width: 100%;
       text-align: center;
@@ -178,10 +201,16 @@
 
   <div id="download" class="section">
     <div data-w-id="376e2a1f-ec70-0dab-11ea-b1863101e37b" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="wrap">
-      <h2>Ready to sneed?</h2>
+      <h2>Ready to sneed??</h2>
       <div class="button-wrap">
         <a href="https://uniswap.org" class="button w-button">Sneed Now</a><a href="https://t.me/SNEEDZONE" class="button contact w-button">Get sneed</a>
       </div>
+    </div>
+  </div>
+
+<div class="news-ticker">
+    <div class="news-content">
+      Warning to all crypto enthusiasts! In the realm of digital assets, caution is your best ally. This is not financial advice, but rather a reminder to tread carefully in the volatile waters of cryptocurrency. Investing wisely is crucial, as the crypto landscape can be as unpredictable as a plot twist in a suspenseful thriller. Cryptocurrencies, like a mysterious puzzle, carry inherent risks, and past performance is no crystal ball for the future. It's a winding journey with unforeseen twists and turns. Do your own research diligently, as the crypto market is a dynamic ecosystem. Remember, just as the wind blows in unpredictable directions, crypto markets can fluctuate unexpectedly. Stay vigilant, stay informed, and may your crypto journey be as resilient as the blockchain itself.
     </div>
   </div>
 </body>
